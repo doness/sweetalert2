@@ -1,0 +1,4 @@
+linters:
+  NestingDepth:
+    enabled: true
+    max_depth: 5
