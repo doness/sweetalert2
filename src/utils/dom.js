@@ -21,6 +21,10 @@ export var getOverlay = function() {
   return elementByClass(swalClasses.overlay);
 };
 
+export var getProgressSteps = function() {
+  return elementByClass(swalClasses.progresssteps);
+};
+
 export var getConfirmButton = function() {
   return elementByClass(swalClasses.confirm);
 };
@@ -81,6 +85,12 @@ export var getChildByClass = function(elem, className) {
     if (hasClass(elem.childNodes[i], className)) {
       return elem.childNodes[i];
     }
+  }
+};
+
+export var empty = function(elem) {
+  while (elem.firstChild) {
+    elem.removeChild(elem.firstChild);
   }
 };
 
